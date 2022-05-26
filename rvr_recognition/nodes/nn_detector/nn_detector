@@ -441,7 +441,7 @@ def callback(data):
     
 def listener():
     rospy.init_node(NODE_NAME, anonymous=True)
-    rospy.Subscriber(INPUT, CompressedImage, callback, queue_size=1)
+    rospy.Subscriber(INPUT, CompressedImage, callback, queue_size=1, buff_size=2**24)
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
 
