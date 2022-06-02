@@ -47,6 +47,8 @@ DEPTH_ESTIMATION_HEIGHT_FISHEYE = { #height gives a depth estimation (height in 
 }
 
 # Object detector #
+# Sample code from the TensorFlow Lite examples
+# see : https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi
 
 """A module to run object detection with a TensorFlow Lite model."""
 
